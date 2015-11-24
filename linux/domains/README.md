@@ -1,5 +1,5 @@
 
-# Lista de TOP-SITES (domiinos) mais visitados no mundo.
+# Lista de TOP-SITES (dominios) mais visitados no mundo.
 <pre>
 
 QUANTCAST
