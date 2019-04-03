@@ -5,7 +5,7 @@
 ## Baixe esse projeto para dentro do Linux Host onde o Docker foi instalado
 
 ### Preparacao:
-### 0 - Crie uma maquina virtual ligada a port-group vlan 4095 (significa todas as vlans)
+
 ### 1 - Desative a seguranca de MAC da port-group, exemplo:
 ```
    # desativar seguranca
@@ -16,7 +16,9 @@
    esxcli network vswitch standard portgroup set -p vPort0-Trunk --vlan-id 4095
 ```
 
-### 2 - Conecte a VM ou adicione uma nova interface de rede na PT vPort0-Trunk
+### 2 - Conecte a VM ou adicione uma nova interface de rede na PT vPort0-Trunk,
+   #### lembre-se de levar as vlans para a porta do vmware no switch gerenciavel
+
 ### 3 - Dentro do Linux, apos instalar o Docker, crie uma rede MACVLAN:
 ```
    # supondo que a vPort0-Trunk foi associada a eth1 da VM
